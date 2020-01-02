@@ -10,7 +10,7 @@ function updateInventory(arr1, arr2) {
     for (let i in arr){
         let count = arr[i][0]
         let name = arr[i][1]
-        console.log('name',name,count)
+
         if (items[name] != null){
             items[name] += count
         }
@@ -21,7 +21,6 @@ function updateInventory(arr1, arr2) {
     }
 
     names.sort()
-
     for(let name in names){
         name = names[name]
         toReturn.push([items[name],name])
